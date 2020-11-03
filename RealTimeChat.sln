@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30320.27
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RealTimeChat", "RealTimeChat\RealTimeChat.csproj", "{65294D2B-69A2-4B08-BC41-C42C6D573C82}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RealTimeChat", "RealTimeChat\RealTimeChat.csproj", "{65294D2B-69A2-4B08-BC41-C42C6D573C82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormsChatSignarlR", "FormsChatSignarlR\FormsChatSignarlR.csproj", "{C7AC85E1-CAAD-4301-A457-2BE16DC79D3A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{65294D2B-69A2-4B08-BC41-C42C6D573C82}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{65294D2B-69A2-4B08-BC41-C42C6D573C82}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{65294D2B-69A2-4B08-BC41-C42C6D573C82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7AC85E1-CAAD-4301-A457-2BE16DC79D3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7AC85E1-CAAD-4301-A457-2BE16DC79D3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7AC85E1-CAAD-4301-A457-2BE16DC79D3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7AC85E1-CAAD-4301-A457-2BE16DC79D3A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
