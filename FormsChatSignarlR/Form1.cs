@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -25,7 +26,21 @@ namespace FormsChatSignarlR
             InitializeComponent();
 
             //se hace la conexion con la url
-            connection = new HubConnectionBuilder().WithUrl(url).Build();
+            //connection = new HubConnectionBuilder().WithUrl(url).Build();
+
+            //para evitar error con el certificado SSL
+            connection = new HubConnectionBuilder()
+            .WithUrl(new Uri(url), options => {                
+                var handler = new HttpClientHandler
+                {
+                    ClientCertificateOptions = ClientCertificateOption.Manual,
+                    ServerCertificateCustomValidationCallback = (httpRequestMessage, cert, cetChain, policyErrors) => true
+                };
+                options.HttpMessageHandlerFactory = _ => handler;               
+            })
+            .Build();
+
+
 
             //en caso de desconexion se intentara conectar de nuevo 
             connection.Closed += async (error) =>
